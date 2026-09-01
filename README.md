@@ -1,15 +1,14 @@
-```html
+
 <div>
 
 <h1>Análise de Desempenho Comercial e Oportunidades de Receita</h1>
 
 <h2>Contexto</h2>
 
-<p>Este projeto tem como base o dataset público TheLook E-commerce, disponibilizado no Google BigQuery, que reúne dados históricos de uma operação de comércio eletrônico.</p>
+<p>Esta análise tem como base o dataset TheLook E-commerce, disponibilizado no Google BigQuery, que reúne dados históricos de uma operação de comércio varejista mundial.</p>
 
-<p>A partir dos dados disponíveis desde 2020, será realizada uma análise do desempenho da operação ao longo do período estudado. O objetivo inicial é compreender como as vendas se comportam em diferentes períodos e dimensões do negócio, utilizando os dados para construir uma visão mais ampla da operação.</p>
-
-<p>Em um e-commerce, a receita é um dos principais indicadores utilizados para acompanhar o desempenho. No entanto, observar apenas sua evolução não permite compreender o cenário comercial em sua totalidade. Para interpretar esse desempenho, é necessário analisar diferentes indicadores e perspectivas do negócio em conjunto.</p>
+<p>A partir dos dados disponíveis desde 2019, será realizada uma análise do desempenho financeiro ao longo do período estudado. O objetivo inicial é compreender como as vendas se comportam em diferentes períodos e dimensões do negócio, utilizando os dados para construir uma visão mais ampla da operação.</p>
+</p>
 
 <h2>Problema de negócio</h2>
 
@@ -34,6 +33,9 @@
 <p>Para responder à pergunta central, a análise foi estruturada a partir de diferentes perspectivas do desempenho comercial da operação.</p>
 
 <p>Primeiramente, foi analisada a evolução das vendas ao longo do tempo, buscando compreender o comportamento da receita e dos principais indicadores comerciais durante o período analisado.</p>
+
+<img width="965" height="408" alt="faturamento x tempo" src="https://github.com/user-attachments/assets/991fd7e3-00ba-4cb9-9d96-164b11b19320" />
+
 
 <p>Em seguida, a análise foi direcionada para os fatores relacionados à geração de receita, avaliando a contribuição das diferentes categorias de produtos e seu desempenho em relação à lucratividade.</p>
 
