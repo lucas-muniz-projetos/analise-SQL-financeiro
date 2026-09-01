@@ -34,14 +34,7 @@
 
 <p>Primeiramente, foi analisada a evolução das vendas ao longo do tempo, buscando compreender o comportamento da receita e dos principais indicadores comerciais durante o período analisado.</p>
 
-<img width="965" height="408" alt="faturamento x tempo" src="https://github.com/user-attachments/assets/991fd7e3-00ba-4cb9-9d96-164b11b19320" />
-
-
 <p>Em seguida, a análise foi direcionada para os fatores relacionados à geração de receita, avaliando a contribuição das diferentes categorias de produtos e seu desempenho em relação à lucratividade.</p>
-
-<img width="748" height="481" alt="receita x categoria" src="https://github.com/user-attachments/assets/2f77b8c5-228d-4d61-aa44-c4a7f7fd5018" />
-
-
 
 <p>Também foi analisado o comportamento dos clientes, com foco na identificação de padrões de compra e na representatividade dos clientes que realizaram apenas uma compra.</p>
 
@@ -59,11 +52,15 @@
 
 <p>Para responder a essa questão, foram analisados a evolução mensal da receita, o volume de pedidos, a quantidade de clientes e o ticket médio, além das variações de receita em relação ao mês anterior (MoM) e ao mesmo período do ano anterior (YoY).</p>
 
+<img width="965" height="408" alt="faturamento x tempo" src="https://github.com/user-attachments/assets/991fd7e3-00ba-4cb9-9d96-164b11b19320" />
+
 <h3>2. Categorias e geração de resultado</h3>
 
 <p>Após compreender a evolução das vendas, a análise busca identificar como as diferentes categorias de produtos contribuem para o desempenho da operação.</p>
 
 <p>A análise compara a participação das categorias no faturamento com seu desempenho em lucratividade, permitindo avaliar a composição do resultado comercial.</p>
+
+<img width="748" height="481" alt="receita x categoria" src="https://github.com/user-attachments/assets/2f77b8c5-228d-4d61-aa44-c4a7f7fd5018" />
 
 <h3>3. Comportamento dos clientes</h3>
 
