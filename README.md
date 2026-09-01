@@ -39,6 +39,10 @@
 
 <p>Em seguida, a análise foi direcionada para os fatores relacionados à geração de receita, avaliando a contribuição das diferentes categorias de produtos e seu desempenho em relação à lucratividade.</p>
 
+<img width="748" height="481" alt="receita x categoria" src="https://github.com/user-attachments/assets/2f77b8c5-228d-4d61-aa44-c4a7f7fd5018" />
+
+
+
 <p>Também foi analisado o comportamento dos clientes, com foco na identificação de padrões de compra e na representatividade dos clientes que realizaram apenas uma compra.</p>
 
 <p>A dimensão geográfica foi utilizada para compreender a distribuição das vendas entre os estados e avaliar as diferenças de desempenho entre as regiões.</p>
