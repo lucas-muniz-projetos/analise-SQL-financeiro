@@ -77,11 +77,17 @@
 
 <p>Para essa análise, são considerados receita, pedidos, clientes, ticket médio e participação de cada estado nos resultados da operação.</p>
 
+<img width="1056" height="378" alt="Geografico" src="https://github.com/user-attachments/assets/dbfa064a-415e-4c35-9762-991062d382a4" />
+
+
 <h3>5. Status dos pedidos</h3>
 
 <p>A última perspectiva analisa a distribuição dos pedidos de acordo com seus respectivos status e os valores associados a cada situação.</p>
 
 <p>Essa análise busca identificar como os diferentes status se relacionam com os valores movimentados pela operação e quais situações merecem maior atenção na avaliação do desempenho comercial.</p>
+
+<img width="769" height="81" alt="valor perdido" src="https://github.com/user-attachments/assets/586de470-c353-4488-844b-f1e4ed563dab" />
+
 
 </div>
 ```
