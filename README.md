@@ -68,6 +68,9 @@
 
 <p>A partir dessa perspectiva, são avaliados o número de clientes nessa condição, a receita associada a esse grupo, seu ticket médio e as categorias de produtos mais adquiridas.</p>
 
+<img width="931" height="56" alt="cliente 1 compra" src="https://github.com/user-attachments/assets/1b628913-7898-4edf-a603-77fab038471c" />
+
+
 <h3>4. Distribuição geográfica</h3>
 
 <p>A dimensão geográfica permite avaliar como as vendas estão distribuídas entre os diferentes estados da operação.</p>
