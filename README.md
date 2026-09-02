@@ -90,4 +90,22 @@
 
 
 </div>
+
+<h2>Principais Insights da Análise</h2>
+<p>O aumento da receita no ano de 2026 foi muito superior ao observado em 2025, porém o ticket médio manteve-se, na maior parte do período, relativamente estável. Isso demonstra que o crescimento da receita foi impulsionado principalmente pelo aumento do volume de vendas, e não por um aumento significativo no valor médio das compras.</p>
+
+<h3>Concentração de Receita por Categoria</h3>
+<p>As 5 principais categorias representam aproximadamente 44% da receita total das vendas. Entretanto, entre essas cinco categorias, a que apresenta maior proximidade com o ranking de margem de lucro ocupa apenas a 8ª posição.</p>
+<p>Esse cenário demonstra que os produtos responsáveis pelo maior volume de vendas não são necessariamente os mais lucrativos, indicando uma oportunidade para avaliar o equilíbrio entre volume de vendas e rentabilidade por categoria.</p>
+
+<h3>Taxa de Recompra</h3>
+<p>Apenas 14% dos clientes realizaram novas compras, indicando uma baixa taxa de recompra. Esse resultado sugere que o crescimento da operação pode estar mais dependente da aquisição de novos clientes do que da retenção e recorrência da base existente.</p>
+
+<h3>Concentração Geográfica das Vendas</h3>
+<p>Embora a China concentre o maior volume de pedidos e receita, mercados como Reino Unido e França apresentam participação na receita superior à participação nos pedidos. Esse comportamento sugere um maior valor gerado por pedido nesses mercados.</p>
+<p>Além disso, China, Estados Unidos e Brasil concentram aproximadamente 71% da receita, evidenciando uma forte concentração do desempenho comercial nesses três mercados.</p>
+
+<h3>Impacto de Cancelamentos e Devoluções</h3>
+<p>Quase metade das vendas (49,74%) está concentrada em pedidos cancelados ou devolvidos, representando 49,61% do valor dos pedidos.</p>
+<p>O resultado evidencia um ponto de atenção relevante para a operação, uma vez que uma parcela significativa do volume comercial não se mantém como venda efetivada. Esse cenário pode impactar diretamente a receita realizada e indica a necessidade de investigar as principais causas de cancelamentos e devoluções.</p>
 ```
