@@ -92,6 +92,7 @@
 </div>
 
 <h2>Principais Insights da Análise</h2>
+<h3>Evolução das vendas</h3>
 <p>O aumento da receita no ano de 2026 foi muito superior ao observado em 2025, porém o ticket médio manteve-se, na maior parte do período, relativamente estável. Isso demonstra que o crescimento da receita foi impulsionado principalmente pelo aumento do volume de vendas, e não por um aumento significativo no valor médio das compras.</p>
 
 <h3>Concentração de Receita por Categoria</h3>
