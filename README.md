@@ -17,47 +17,46 @@
 <p>Comportamento de recompra dos clientes</p>
 <p>distribuição geográfica das vendas</p>
 <p>Impacto de cancelamentos e devoluções sobre os valores movimentados</p>
+
+<h2>Preparação dos dados</h2>
+<p>Antes da análise, os dados passaram por uma etapa de tratamento para garantir consitência e confiabilidade das informações.</p>
+<p>Foram utilizadas as tabelas de Pedidos (orders), Itens do Pedido (order_items), Clientes (Usuários) e Produtos (products) do dataset TheLook E-commerce, relacionadas entre si por meio de order_id (pedidos e itens pedidos), product_id (itens do pedido e produtos) e user_id (pedidos e clientes). Foram selecionadasapenas as colunas relevantes para as questões de negócios investigadas, e carregados paenas os pedidos com status de "completo", "cancelado", "devolvido". </p>
+<p>A ausência de nulos nos identificadores foi validada, mantendo-se, ainda assim, uma cláusula de verificação (WHERE) como proteção contra eventuais inconsistências em atualizações futuras na base. Na tabela de clientes, foi aplicado distinct para garantir a unicidade dos registros.</p>
+<p>Campos de texto foram padronizados por meio da remoção de espaços em branco e conversão para letras maiúsculas, e os valores numéricos foram definidos para duas casas decimais.</p>
+
+
+
 <h2>Análise</h2>
 
 <h3>1. Evolução do desempenho comercial</h3>
 
-<p>A primeira etapa da análise busca compreender como o desempenho comercial da operação se comportou ao longo do período estudado.</p>
-
-<p>Para responder a essa questão, foram analisados a evolução mensal da receita, o volume de pedidos, a quantidade de clientes e o ticket médio, além das variações de receita em relação ao mês anterior (MoM) e ao mesmo período do ano anterior (YoY).</p>
+<p>O desempenho comercial ao longo do período é avaliado pela receita mensal, volume de pedidos, quantidade de clientes e ticket médio, incluindo as variações mês a mês (MoM) e ano a ano (YoY)</p>
 
 <img width="965" height="408" alt="faturamento x tempo" src="https://github.com/user-attachments/assets/991fd7e3-00ba-4cb9-9d96-164b11b19320" />
 
 <h3>2. Categorias e geração de resultado</h3>
 
-<p>Após compreender a evolução das vendas, a análise busca identificar como as diferentes categorias de produtos contribuem para o desempenho da operação.</p>
-
-<p>A análise compara a participação das categorias no faturamento com seu desempenho em lucratividade, permitindo avaliar a composição do resultado comercial.</p>
+<p>A participação de cada categoria de produto no faturamento é comparada ao seu desempenho em lucratividade, evidenciando a real composição do resultado comercial da operação.</p>
 
 <img width="748" height="481" alt="receita x categoria" src="https://github.com/user-attachments/assets/2f77b8c5-228d-4d61-aa44-c4a7f7fd5018" />
 
 <h3>3. Comportamento dos clientes</h3>
 
-<p>A análise também considera o comportamento de compra dos clientes, buscando compreender sua participação na geração de receita.</p>
-
-<p>A partir dessa perspectiva, são avaliados o número de clientes nessa condição, a receita associada a esse grupo, seu ticket médio e as categorias de produtos mais adquiridas.</p>
+<p>O comportamento de compra é avaliado a partir do volume de clientes de compra única, da receita gerada por esse grupo, do ticket médio e das categorias mais adquiridas.</p>
 
 <img width="931" height="56" alt="cliente 1 compra" src="https://github.com/user-attachments/assets/1b628913-7898-4edf-a603-77fab038471c" />
 
 
 <h3>4. Distribuição geográfica</h3>
 
-<p>A dimensão geográfica permite avaliar como as vendas estão distribuídas entre os diferentes estados da operação.</p>
-
-<p>Para essa análise, são considerados receita, pedidos, clientes, ticket médio e participação de cada estado nos resultados da operação.</p>
+<p>A distribuição das vendas entre os estados é avaliada por receita, pedidos, clientes, ticket médio e participação de cada região nos resultados da operação.</p>
 
 <img width="1056" height="378" alt="Geografico" src="https://github.com/user-attachments/assets/dbfa064a-415e-4c35-9762-991062d382a4" />
 
 
 <h3>5. Status dos pedidos</h3>
 
-<p>A última perspectiva analisa a distribuição dos pedidos de acordo com seus respectivos status e os valores associados a cada situação.</p>
-
-<p>Essa análise busca identificar como os diferentes status se relacionam com os valores movimentados pela operação e quais situações merecem maior atenção na avaliação do desempenho comercial.</p>
+<p>Os pedidos são segmentados por status para identificar sua relação com os valores movimentados e apontar as situações que exigem atenção prioritária na gestão comercial.</p>
 
 <img width="769" height="81" alt="valor perdido" src="https://github.com/user-attachments/assets/586de470-c353-4488-844b-f1e4ed563dab" />
 
@@ -87,7 +86,7 @@
 <h4>Entre os achados da análise, dois se destacaram pelo potencial de retorno frente ao esforço necessário para endereçá-lo:  a alta concentração de 
 cancelamentos/devoluções e a baixa taxa de recompra dos clientes. As recomendações a seguir priorizam essas duas frentes:</h4>
 <h6>Cancelamentos e devoluções</h6>
-<p>Cancelamentos e devoluções concentram 49,74% dos pedidos e aproximadamente R$XXXXX em pedidos não efetivados no período analisado. Recomenda-se levantar os motivos de cancelamentos devolução por categoria e por região, priorizando as combinações com maior volume,  para identificar rapidamente se a causa predominante é operacional (atraso de entrega, ruptura de estoque) ou comercial (divergência entre o produto anunciado e o recebido). A partir desse mapeamento, é possível direcionar ações específicas, como a revisão de SLA  de entrega junto às transportadoras nas regiões mais afetadas, ou ajuste de descrição/fotos dos produtos nas categorias com maior taxa de devolução e acompanhar mensalmente a evolução do indicador para validar o impacto das ações implementadas</p>
+<p>Cancelamentos e devoluções concentram 49,74% dos pedidos e aproximadamente U$2.666.789,75 em pedidos não efetivados no período analisado. Recomenda-se levantar os motivos de cancelamentos devolução por categoria e por região, priorizando as combinações com maior volume,  para identificar rapidamente se a causa predominante é operacional (atraso de entrega, ruptura de estoque) ou comercial (divergência entre o produto anunciado e o recebido). A partir desse mapeamento, é possível direcionar ações específicas, como a revisão de SLA  de entrega junto às transportadoras nas regiões mais afetadas, ou ajuste de descrição/fotos dos produtos nas categorias com maior taxa de devolução e acompanhar mensalmente a evolução do indicador para validar o impacto das ações implementadas</p>
 
 <h6>Recompra</h6>
 <p>Apenas 14% dos clientes realizaram novas compras no período analisado, indicando baixa retenção da base atual. Recomenda-se implementar um programa de cumpom ou desconto para segunda compra, disparado automaticamente após a finalização do primeiro pedido, além de e-mails de reengajamento para clientes sem compra há mais de 60 dias. Também é recomendável priorizar essas ações nas categorias com maior participação na receita, de forma a maximizar o retorno do investimento em retenção. Ao aumentar a taxa de recompra, a operação reduz sua dependência de aquisição constante de novos clientes e melhora a previsibilidade de receita no médio prazo. </p>
