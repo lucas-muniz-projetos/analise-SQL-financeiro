@@ -109,4 +109,13 @@
 <h3>Impacto de Cancelamentos e Devoluções</h3>
 <p>Quase metade das vendas (49,74%) está concentrada em pedidos cancelados ou devolvidos, representando 49,61% do valor dos pedidos.</p>
 <p>O resultado evidencia um ponto de atenção relevante para a operação, uma vez que uma parcela significativa do volume comercial não se mantém como venda efetivada. Esse cenário pode impactar diretamente a receita realizada e indica a necessidade de investigar as principais causas de cancelamentos e devoluções.</p>
-```
+
+<h2>Recomendações</h2>
+<h4>Entre os achados da análise, dois se destacaram pelo potencial de retorno frente ao esforço necessário para endereçá-lo:  a alta concentração de 
+cancelamentos/devoluções e a baixa taxa de recompra dos clientes. As recomendações a seguir priorizam essas duas frentes:</h4>
+<h6>Cancelamentos e devoluções</h6>
+<p>Cancelamentos e devoluções concentram 49,74% dos pedidos e aproximadamente R$XXXXX em pedidos não efetivados no período analisado. Recomenda-se levantar os motivos de cancelamentos devolução por categoria e por região, priorizando as combinações com maior volume,  para identificar rapidamente se a causa predominante é operacional (atraso de entrega, ruptura de estoque) ou comercial (divergência entre o produto anunciado e o recebido). A partir desse mapeamento, é possível direcionar ações específicas, como a revisão de SLA  de entrega junto às transportadoras nas regiões mais afetadas, ou ajuste de descrição/fotos dos produtos nas categorias com maior taxa de devolução e acompanhar mensalmente a evolução do indicador para validar o impacto das ações implementadas</p>
+
+<h6>Recompra</h6>
+<p>Apenas 14% dos clientes realizaram novas compras no período analisado, indicando baixa retenção da base atual. Recomenda-se implementar um programa de cumpom ou desconto para segunda compra, disparado automaticamente após a finalização do primeiro pedido, além de e-mails de reengajamento para clientes sem compra há mais de 60 dias. Também é recomendável priorizar essas ações nas categorias com maior participação na receita, de forma a maximizar o retorno do investimento em retenção. Ao aumentar a taxa de recompra, a operação reduz sua dependência de aquisição constante de novos clientes e melhora a previsibilidade de receita no médio prazo. </p>
+
