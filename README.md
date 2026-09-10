@@ -8,6 +8,8 @@
 
 <p>A receita isolada não explica o desempenho comercial da operação: categoria, de produto, comportamento de recompra, distribuição geográfica e status dos pedidos têm impacto direto nos resultados. A investigação desses fatores via SQL aponta oportunidades concretas de crescimento e geração de receita</p>
 
+<p>Toda a extração, tratamento e análise dos dados foram realizads exclusivamente em SQL, no Google BigQuery</p>
+
 <p><strong>Pergunta central: Quais fatores explicam o desempenho comercial da empresa, e onde estão as principais oportunidades de crescimento e geração de receita ?</strong></p>
 
 <h2>Abordagem</h2>
