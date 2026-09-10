@@ -22,7 +22,7 @@
 <p>Antes da análise, os dados passaram por uma etapa de tratamento para garantir consitência e confiabilidade das informações.</p>
 <p>Foram utilizadas as tabelas de Pedidos (orders), Itens do Pedido (order_items), Clientes (Usuários) e Produtos (products) do dataset TheLook E-commerce, relacionadas entre si por meio de order_id (pedidos e itens pedidos), product_id (itens do pedido e produtos) e user_id (pedidos e clientes). Foram selecionadasapenas as colunas relevantes para as questões de negócios investigadas, e carregados paenas os pedidos com status de "completo", "cancelado", "devolvido". </p>
 <p>A ausência de nulos nos identificadores foi validada, mantendo-se, ainda assim, uma cláusula de verificação (WHERE) como proteção contra eventuais inconsistências em atualizações futuras na base. Na tabela de clientes, foi aplicado distinct para garantir a unicidade dos registros.</p>
-<p>Campos de texto foram padronizados por meio da remoção de espaços em branco e conversão para letras maiúsculas, e os valores numéricos foram definidos para duas casas decimais.</p>
+<p>Campos de texto foram padronizados por meio da remoção de espaços em branco e o campo de status foi convertido para letras maiúsculas, enquanto os campos destinados à visualização, como nome de país, categoria e usuários, foram formatados com a primeira letra maiúscula (InitCap). Os valores numéricos foram definidos para duas casas decimais.</p>
 
 
 
