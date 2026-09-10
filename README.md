@@ -3,47 +3,21 @@
 
 <h1>Análise de Desempenho Comercial e Oportunidades de Receita</h1>
 
-<h2>Contexto</h2>
+<h2>Visão Geral</h2>
 
-<p>Esta análise tem como base o dataset TheLook E-commerce, disponibilizado no Google BigQuery, que reúne dados históricos de uma operação de comércio varejista mundial.</p>
+<p>Análise do desempenho comercial de uma operação de e-commerce global, com base no dataset Thelook E-commerce(Google BigQuery) e dados históricos desde 2019.</p>
 
-<p>A partir dos dados disponíveis desde 2019, será realizada uma análise do desempenho financeiro ao longo do período estudado. O objetivo inicial é compreender como as vendas se comportam em diferentes períodos e dimensões do negócio, utilizando os dados para construir uma visão mais ampla da operação.</p>
-</p>
+<p>A receita isolada não explica o desempenho comercial da operação: categoria, de produto, comportamento de recompra, distribuição geográfica e status dos pedidos têm impacto direto nos resultados. A investigação desses fatores via SQL aponta oportunidades concretas de crescimento e geração de receita</p>
 
-<h2>Problema de negócio</h2>
+<p><strong>Pergunta central: Quais fatores explicam o desempenho comercial da empresa, e onde estão as principais oportunidades de crescimento e geração de receita ?</strong></p>
 
-<p>A evolução da receita, quando analisada isoladamente, não permite compreender todo o contexto do desempenho comercial da operação.</p>
-
-<p>Para obter uma visão mais ampla, é necessário analisar diferentes dimensões dos dados e compreender como elas se relacionam com os resultados observados.</p>
-
-<p>A partir disso, o projeto busca estruturar uma análise que permita compreender o desempenho comercial da operação de forma integrada, utilizando os dados históricos disponíveis.</p>
-
-<h2>Pergunta central</h2>
-
-<p>Quais fatores explicam o desempenho comercial da empresa e onde estão as principais oportunidades de crescimento e geração de receita?</p>
-
-<h2>Objetivo da análise</h2>
-
-<p>Avaliar o desempenho comercial da operação a partir dos dados históricos disponíveis, investigando diferentes dimensões das vendas para identificar os fatores relacionados aos resultados observados.</p>
-
-<p>A análise busca transformar os dados em informações que contribuam para uma compreensão mais ampla do desempenho da operação e para a identificação de possíveis oportunidades a partir das evidências encontradas nos dados.</p>
-
-<h2>Abordagem da análise</h2>
-
-<p>Para responder à pergunta central, a análise foi estruturada a partir de diferentes perspectivas do desempenho comercial da operação.</p>
-
-<p>Primeiramente, foi analisada a evolução das vendas ao longo do tempo, buscando compreender o comportamento da receita e dos principais indicadores comerciais durante o período analisado.</p>
-
-<p>Em seguida, a análise foi direcionada para os fatores relacionados à geração de receita, avaliando a contribuição das diferentes categorias de produtos e seu desempenho em relação à lucratividade.</p>
-
-<p>Também foi analisado o comportamento dos clientes, com foco na identificação de padrões de compra e na representatividade dos clientes que realizaram apenas uma compra.</p>
-
-<p>A dimensão geográfica foi utilizada para compreender a distribuição das vendas entre os estados e avaliar as diferenças de desempenho entre as regiões.</p>
-
-<p>Por fim, foram analisados os status dos pedidos, buscando compreender seu impacto sobre os valores movimentados pela operação.</p>
-
-<p>A combinação dessas perspectivas permite construir uma visão integrada do desempenho comercial, utilizando os dados para investigar as questões levantadas pela pergunta central.</p>
-
+<h2>Abordagem</h2>
+<p>Cinco frentes foram avaliadas:</p> 
+<p>evolução temporal da receita e dos principais indicadores comerciais</p>
+<p>Contribuição das categorias de produto para a receita e lucratividade</p>
+<p>Comportamento de recompra dos clientes</p>
+<p>distribuição geográfica das vendas</p>
+<p>Impacto de cancelamentos e devoluções sobre os valores movimentados</p>
 <h2>Análise</h2>
 
 <h3>1. Evolução do desempenho comercial</h3>
