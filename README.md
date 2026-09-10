@@ -1,6 +1,5 @@
 
 <div>
-
 <h1>Análise de Desempenho Comercial e Oportunidades de Receita</h1>
 
 <h2>Visão Geral</h2>
