@@ -8,12 +8,12 @@
 
 <p>A receita isolada não explica o desempenho comercial da operação: categoria, de produto, comportamento de recompra, distribuição geográfica e status dos pedidos têm impacto direto nos resultados. A investigação desses fatores via SQL aponta oportunidades concretas de crescimento e geração de receita</p>
 
-<p>Toda a extração, tratamento e análise dos dados foram realizads exclusivamente em SQL, no Google BigQuery</p>
+<p>Toda a extração, tratamento e análise dos dados foram realizadas exclusivamente em SQL, no Google BigQuery</p>
 
 <p><strong>Pergunta central: Quais fatores explicam o desempenho comercial da empresa, e onde estão as principais oportunidades de crescimento e geração de receita ?</strong></p>
 
 <h2>Abordagem</h2>
-<p>Cinco frentes foram avaliadas:</p> 
+<p>Para responder à pergunta central, o desempenho comercial foi decomposto em cinco frentes complementares:</p> 
 <p>evolução temporal da receita e dos principais indicadores comerciais</p>
 <p>Contribuição das categorias de produto para a receita e lucratividade</p>
 <p>Comportamento de recompra dos clientes</p>
@@ -21,10 +21,10 @@
 <p>Impacto de cancelamentos e devoluções sobre os valores movimentados</p>
 
 <h2>Preparação dos dados</h2>
-<p>Antes da análise, os dados passaram por uma etapa de tratamento para garantir consitência e confiabilidade das informações.</p>
-<p>Foram utilizadas as tabelas de Pedidos (orders), Itens do Pedido (order_items), Clientes (Usuários) e Produtos (products) do dataset TheLook E-commerce, relacionadas entre si por meio de order_id (pedidos e itens pedidos), product_id (itens do pedido e produtos) e user_id (pedidos e clientes). Foram selecionadasapenas as colunas relevantes para as questões de negócios investigadas, e carregados paenas os pedidos com status de "completo", "cancelado", "devolvido". </p>
+<p>Antes da análise, os dados passaram por uma etapa de tratamento para garantir consistência e confiabilidade das informações.</p>
+<p>Foram utilizadas as tabelas de Pedidos (orders), Itens do Pedido (order_items), Clientes (custumers) e Produtos (products) do dataset TheLook E-commerce, relacionadas entre si por meio de order_id (pedidos e itens pedidos), product_id (itens do pedido e produtos) e user_id (pedidos e clientes). Foram selecionadas apenas as colunas relevantes para as questões de negócios investigadas, e carregados apenas os pedidos com status de "completo", "cancelado" ou "devolvido". </p>
 <p>A ausência de nulos nos identificadores foi validada, mantendo-se, ainda assim, uma cláusula de verificação (WHERE) como proteção contra eventuais inconsistências em atualizações futuras na base. Na tabela de clientes, foi aplicado distinct para garantir a unicidade dos registros.</p>
-<p>Campos de texto foram padronizados por meio da remoção de espaços em branco e o campo de status foi convertido para letras maiúsculas, enquanto os campos destinados à visualização, como nome de país, categoria e usuários, foram formatados com a primeira letra maiúscula (InitCap). Os valores numéricos foram definidos para duas casas decimais.</p>
+<p>Campos de texto foram padronizados por meio da remoção de espaços em branco e o campo de status foi convertido para letras maiúsculas, enquanto os campos destinados à visualização, como nome de país, categoria e usuários, foram formatados com a primeira letra maiúscula (InitCap). Os valores numéricos foram arredondados para duas casas decimais.</p>
 
 
 
@@ -85,11 +85,10 @@
 <p>O resultado evidencia um ponto de atenção relevante para a operação, uma vez que uma parcela significativa do volume comercial não se mantém como venda efetivada. Esse cenário pode impactar diretamente a receita realizada e indica a necessidade de investigar as principais causas de cancelamentos e devoluções.</p>
 
 <h2>Recomendações</h2>
-<h4>Entre os achados da análise, dois se destacaram pelo potencial de retorno frente ao esforço necessário para endereçá-lo:  a alta concentração de 
-cancelamentos/devoluções e a baixa taxa de recompra dos clientes. As recomendações a seguir priorizam essas duas frentes:</h4>
+<h4>Entre os achados da análise, dois se destacaram pelo potencial de retorno frente ao esforço necessário para endereçá-los: a alta concentração de cancelamentos/devoluções e a baixa taxa de recompra dos clientes. As recomendações a seguir priorizam essas duas frentes:</h4>
 <h6>Cancelamentos e devoluções</h6>
-<p>Cancelamentos e devoluções concentram 49,74% dos pedidos e aproximadamente U$2.666.789,75 em pedidos não efetivados no período analisado. Recomenda-se levantar os motivos de cancelamentos devolução por categoria e por região, priorizando as combinações com maior volume,  para identificar rapidamente se a causa predominante é operacional (atraso de entrega, ruptura de estoque) ou comercial (divergência entre o produto anunciado e o recebido). A partir desse mapeamento, é possível direcionar ações específicas, como a revisão de SLA  de entrega junto às transportadoras nas regiões mais afetadas, ou ajuste de descrição/fotos dos produtos nas categorias com maior taxa de devolução e acompanhar mensalmente a evolução do indicador para validar o impacto das ações implementadas</p>
+<p>Cancelamentos e devoluções concentram 49,74% dos pedidos e aproximadamente U$2.666.789,75 em pedidos não efetivados no período analisado. Recomenda-se levantar os motivos de cancelamentos e devolução por categoria e por região, priorizando as combinações com maior volume,  para identificar rapidamente se a causa predominante é operacional (atraso de entrega, ruptura de estoque) ou comercial (divergência entre o produto anunciado e o recebido). A partir desse mapeamento, é possível direcionar ações específicas, como a revisão de SLA  de entrega junto às transportadoras nas regiões mais afetadas, ou ajuste de descrição/fotos dos produtos nas categorias com maior taxa de devolução e acompanhar mensalmente a evolução do indicador para validar o impacto das ações implementadas</p>
 
 <h6>Recompra</h6>
-<p>Apenas 14% dos clientes realizaram novas compras no período analisado, indicando baixa retenção da base atual. Recomenda-se implementar um programa de cumpom ou desconto para segunda compra, disparado automaticamente após a finalização do primeiro pedido, além de e-mails de reengajamento para clientes sem compra há mais de 60 dias. Também é recomendável priorizar essas ações nas categorias com maior participação na receita, de forma a maximizar o retorno do investimento em retenção. Ao aumentar a taxa de recompra, a operação reduz sua dependência de aquisição constante de novos clientes e melhora a previsibilidade de receita no médio prazo. </p>
+<p>Apenas 14% dos clientes realizaram novas compras no período analisado, indicando baixa retenção da base atual. Recomenda-se implementar um programa de cupom ou desconto para segunda compra, disparado automaticamente após a finalização do primeiro pedido, além de e-mails de reengajamento para clientes sem compra há mais de 60 dias. Também é recomendável priorizar essas ações nas categorias com maior participação na receita, de forma a maximizar o retorno do investimento em retenção. Ao aumentar a taxa de recompra, a operação reduz sua dependência de aquisição constante de novos clientes e melhora a previsibilidade de receita no médio prazo. </p>
 
