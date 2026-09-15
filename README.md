@@ -92,3 +92,10 @@
 <h6>Recompra</h6>
 <p>Apenas 14% dos clientes realizaram novas compras no período analisado, indicando baixa retenção da base atual. Recomenda-se implementar um programa de cupom ou desconto para segunda compra, disparado automaticamente após a finalização do primeiro pedido, além de e-mails de reengajamento para clientes sem compra há mais de 60 dias. Também é recomendável priorizar essas ações nas categorias com maior participação na receita, de forma a maximizar o retorno do investimento em retenção. Ao aumentar a taxa de recompra, a operação reduz sua dependência de aquisição constante de novos clientes e melhora a previsibilidade de receita no médio prazo. </p>
 
+<H3>Conclusão</H3>
+<P>
+No fim das contas, o crescimento de receita observado veio muito mais de vender mais unidades do que de vender mais caro ,o ticket médio praticamente não se mexeu. Isso é bom, mas também é um sinal de alerta: um crescimento apoiado só em volume tende a ser mais frágil se a aquisição de clientes desacelerar.
+Dois problemas se destacaram claramente na análise. Primeiro, quase metade dos pedidos (49,74%) acaba em cancelamento ou devolução — um volume de dinheiro parado enorme perto de US$ 2,7 milhões que simplesmente não vira receita de fato. Segundo, a recompra é baixa: só 14% dos clientes voltam a comprar. Isso mostra uma operação ainda muito dependente de trazer gente nova, e pouco de fidelizar quem já comprou.
+Também vale reforçar um ponto que passa despercebido se só olhar receita: as categorias que mais vendem não são as mais lucrativas. E a operação está bem concentrada em três países China, EUA e Brasil, o que ajuda hoje mas é um risco se algum desses mercados desacelerar.
+As duas recomendações feitas aqui atacam justamente os pontos com mais impacto e menos esforço para agir. O próximo passo natural é acompanhar esses dois indicadores mês a mês depois que as ações forem implementadas, pra ver se realmente estão fazendo diferença e ajustar o que não estiver funcionando.
+</P>
