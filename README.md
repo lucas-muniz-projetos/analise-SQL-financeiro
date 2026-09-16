@@ -48,7 +48,7 @@
 
 <p>O comportamento de compra é avaliado a partir do volume de clientes de compra única, da receita gerada por esse grupo, do ticket médio e das categorias mais adquiridas.</p>
 
-<img width="943" height="68" alt="cliente recompra" src="https://github.com/user-attachments/assets/fa7d1183-1847-45ac-a640-194710f9fbbc" />
+<img width="1078" height="68" alt="cliente recompra" src="https://github.com/user-attachments/assets/fa7d1183-1847-45ac-a640-194710f9fbbc" />
 
 
 <h3>4. Distribuição geográfica</h3>
@@ -63,7 +63,7 @@
 
 <p>Os pedidos são segmentados por status para identificar sua relação com os valores movimentados e apontar as situações que exigem atenção prioritária na gestão comercial.</p>
 
-<img width="903" height="82" alt="PERDIDO" src="https://github.com/user-attachments/assets/9c34d9ee-2b50-49ed-80d6-210520f18471" />
+<img width="1078" height="82" alt="PERDIDO" src="https://github.com/user-attachments/assets/9c34d9ee-2b50-49ed-80d6-210520f18471" />
 
 </div>
 
