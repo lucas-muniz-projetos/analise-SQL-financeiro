@@ -1,15 +1,4 @@
-/*
-Como as vendas evoluíram ao longo do tempo e existem períodos de maior ou menor desempenho?
 
-Análises principais:
-1. Receita total por mês XXXXXXXX 
-2. Quantidade de pedidos por mês XXXXXXXXXXX
-3. Quantidade de clientes por mês XXXXXXXXXX
-4. Ticket médio por mês XXXXXXXXXX
-5. Participação (%) de cada mês na receita total do período 
-6. Crescimento (%) da receita em relação ao mês anterior (MoM) XXXXXXXXXXXXXX
-7. Crescimento (%) da receita em relação ao mesmo mês do ano anterior (YoY) XXXXXXXXXXXXX
-*/
 
 -- validação das vendas que estão completas
 WITH comprasValidas AS (
