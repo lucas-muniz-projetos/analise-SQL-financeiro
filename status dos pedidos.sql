@@ -1,3 +1,4 @@
+-- filtrando compras válidas que são canceladas ou retornadas
 WITH comprasValidas AS (
   SELECT order_id,
          status
@@ -6,18 +7,20 @@ WITH comprasValidas AS (
 
 ),
 
+-- calculo das compras com status de cancelado ou retornadas
  receitas AS (
    SELECT cv.status AS status, 
           COUNT(DISTINCT oi.order_id) AS qnt_vendas,
+          -- calculo da % que o status representa
           ROUND(COUNT(DISTINCT oi.order_id) / 
              (SELECT COUNT(DISTINCT order_id) FROM `projeto-dados-496708.projetobq.dl_ordem_items` )
              *100
            ,2) AS porc_vendas,
           COUNT(oi.id) AS qnt_itens,
           ROUND(SUM(oi.sale_price),2) AS valores_perdidos,
-          -- SUM(oi.sale_price) / (SUM(SUM(oi.sale_price)) OVER()) AS p_valor_perdido
+          -- % do valor em dinheiro que foi perdido do total
           ROUND(SUM(oi.sale_price) / 
-                (select sum(sale_price) from `projeto-dados-496708.projetobq.dl_ordem_items`)
+                (select sum(sale_price) from `projeto-dados-496708.projetobq.dl_ordem_items` WHERE status IN ("COMPLETE", "RETURNED", "CANCELED"))
                  * 100
            ,2) AS p_valores_perdidos,
            ROUND(SUM(oi.sale_price) / COUNT(DISTINCT oi.order_id),2) AS ticket_medio
