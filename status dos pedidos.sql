@@ -1,28 +1,3 @@
-/* Quanto a empresa perde com pedidos cancelados, devolvidos ou não concluídos?
-
-Pergunta de negócio
-
-"Quais status de pedido geram maior impacto financeiro para a empresa e onde estão as principais perdas de receita?"
-
-Um executivo quer saber:
-
-Onde a empresa está perdendo receita. 
-Quais status representam o maior volume de pedidos.
-Qual o impacto financeiro de cancelamentos e devoluções.
-Quais processos precisam de maior atenção.
-Como melhorar a eficiência operacional das vendas.
-
-O que você precisaria descobrir
-
-Quantidade de pedidos por status. - Returned, Cancelled
-Receita associada a cada status.
-Participação de cada status no total de pedidos.
-Participação de cada status na receita total.
-Ticket médio por status.
-Ranking dos status por impacto financeiro.
-Valor potencial perdido em pedidos cancelados e devolvidos.
-*/
-
 WITH comprasValidas AS (
   SELECT order_id,
          status
