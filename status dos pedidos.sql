@@ -20,7 +20,7 @@ WITH comprasValidas AS (
           ROUND(SUM(oi.sale_price),2) AS valores_perdidos,
           -- % do valor em dinheiro que foi perdido do total
           ROUND(SUM(oi.sale_price) / 
-                (select sum(sale_price) from `projeto-dados-496708.projetobq.dl_ordem_items` WHERE status IN ("COMPLETE", "RETURNED", "CANCELED"))
+                (select sum(sale_price) from `projeto-dados-496708.projetobq.dl_ordem_items`)
                  * 100
            ,2) AS p_valores_perdidos,
            ROUND(SUM(oi.sale_price) / COUNT(DISTINCT oi.order_id),2) AS ticket_medio
