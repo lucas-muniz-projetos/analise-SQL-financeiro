@@ -53,7 +53,7 @@ categoria AS (
 
 SELECT 
     COUNT(DISTINCT c1.user_id) AS cliente_1_compra,
-
+  -- % clientes que só fizeram uma única compra e está com status de completa
   CONCAT(
     FORMAT('%.2f',
         COUNT(DISTINCT c1.user_id) /
@@ -63,14 +63,16 @@ SELECT
     ),
     '%'
   ) AS porcentagem_cliente_1_compra,
+
+  --receita gerada
   CONCAT(
         'R$ ',
         REPLACE(REPLACE(REPLACE(
             FORMAT("%'.2f", SUM(v1c.sale_price)),
         ',', '#'), '.', ','), '#', '.')
-    ) AS receita_gerada2,
+    ) AS receita_gerada,
 
-
+    -- ticket_medio
     CONCAT(
         'R$ ',
         REPLACE(REPLACE(REPLACE(
