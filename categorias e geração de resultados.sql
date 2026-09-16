@@ -1,5 +1,3 @@
--- Quais categorias têm maior impacto no faturamento da empresa e melhor desempenho em lucratividade ?
-
 -- comprasValidas foi feito para poder validar as vendas que estão com o status completo 
 WITH comprasValidas AS (
   SELECT v.order_id
