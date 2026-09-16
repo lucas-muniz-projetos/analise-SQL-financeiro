@@ -1,9 +1,3 @@
--- Quais clientes fizeram a primeira compra com sucesso, mas nunca voltaram a comprar ? quanto de receita estamos perdendo 
--- responder -> quantos clientes fizeram 1 compra 
--- Qual a receita gerado por eles -- RESPONDIDO 
--- quais categorias são mais comprada - RESPONDIDO 
--- ticket médio -- RESPONDIDO
-
 -- cliente que fizeram compras
 WITH cliente1compra AS (
   SELECT
@@ -23,6 +17,7 @@ pedidos_validos AS (
   WHERE v.status = 'COMPLETE'
 ),
 
+-- calculo dos clintes que fizeram apenas uma compra
 valores1Compra AS (
   SELECT 
       c1.user_id,
@@ -35,6 +30,7 @@ valores1Compra AS (
     ON pv.order_id = oi.order_id
 ),
 
+-- calculando categoria que mais vendeu entre os clientes que só realizaram uma compra
 categoria AS (
   SELECT
          p.categoria AS categorias,
